@@ -9,7 +9,13 @@
 
 -- feladatok
 -- 1  Listázd ki azokat a kutyákat, amelyek még örökbe fogadhatóak. A nevük legyen "free dog".
--- 2. Számold össze, hány fekete kutyának van gazdája. 
+
+SELECT * from dog
+WHERE dog.status = 2;
+
+-- 2. Számold össze, hány fekete kutyának van gazdája.
+SELECT count(id) as "Gazdis fekete kutyák" from dog
+where color like "black" and dog.status =1;
 -- 3. Listázd ki, azokat a barna és közepes testű kutyákat, amiknek hiányzik valamelyik oltása.
 -- 4. Számold ki, hogy átlagosan a fiatalabb, vagy az idősebb kutyákat adoptálják.
 -- 5. Listázd ki azokat a kutyákat, akik a 2022-es évben születtek és van veszettségi (rabies) és szopornyica (distemper) elleni oltásuk.

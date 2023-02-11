@@ -22,16 +22,38 @@ WHERE color like "black"
 
 SELECT *
 FROM dog
-INNER JOIN basic_vaccination ON basic_vaccination.transponder = dog.transponder
-WHERE basic_vaccination.distemper =2
-  OR `hepatitis(CVH)` = 2
-  OR leptospirosis = 2
-  OR parvovirosis = 2
-  OR rabies =2;
+INNER JOIN basic_vaccination ON basic_vaccination.transponder = dog.transponder WHERE(basic_vaccination.distemper =2
+                                                                                      OR `hepatitis(CVH)` = 2
+                                                                                      OR leptospirosis = 2
+                                                                                      OR parvovirosis = 2
+                                                                                      OR rabies =2)
+AND (color like "brown"
+     AND SIZE like "medium");
 
 -- 4. Számold ki, hogy átlagosan a fiatalabb, vagy az idősebb kutyákat adoptálják.
+
+SELECT AVG(DATEDIFF(NOW(), birthdate) / 365.25) AS "Az örökbefogatott kutyák átlagos életkora"
+FROM dog_adoption.dog
+WHERE dog.status=1;
+
 -- 5. Listázd ki azokat a kutyákat, akik a 2022-es évben születtek és van veszettségi (rabies) és szopornyica (distemper) elleni oltásuk.
+
+SELECT *
+FROM dog
+INNER JOIN basic_vaccination ON basic_vaccination.transponder = dog.transponder
+WHERE birthdate like "2022%"
+  AND rabies =1
+  AND distemper=1;
+
 -- 6.Listázd ki a gazdikat legyen a neve "teljes név" és a hozzájuk tartozó kutyák nevét (adoptált és foglaltak is).
+
+SELECT concat(first_name, " ", last_name) AS "teljes név",
+       dog.name
+FROM OWNER
+INNER JOIN dog ON owner.owner_id=dog.owner_id
+WHERE dog.status = 1
+  OR dog.status=3;
+
 -- 7.Listázd ki a 2022 előtt született kis testű, fehér kutyákat.
 -- 8.Melyik gazdátlan nőstény kutyának van a legkevesebb oltása?
 -- 9.Hány százaléka gazdis vagy foglalt a barna és közepes testű kutyáknak?

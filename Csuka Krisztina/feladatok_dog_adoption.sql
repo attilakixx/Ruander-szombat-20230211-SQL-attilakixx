@@ -23,3 +23,4 @@
 -- 13.Doris Herald kutyájának hány oltása van?
 -- 14.Listázd ki, hogy a keverék kutyákon kívül, milyen kutyákat tudnak még örökbe fogadni.
 -- 15.Melyik a legidősebb kutya, amit lefoglaltak?
+

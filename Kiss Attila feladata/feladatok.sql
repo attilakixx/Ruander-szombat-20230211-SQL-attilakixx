@@ -1,0 +1,10 @@
+-- 1. List all the emloyees who reports to Mary Patterson!
+-- 2. How many sales rep works in the NYC office?
+-- 3.How many percent of all the orders are not shipped?
+-- 4. Which customer copleted the highest amount of total payment?
+-- 5. List the 3 productlines that has the most products.
+-- 6. From which products were the no orders at all?
+-- 7. Who ordered from the most expensive product?
+-- 8. List the employees of the office that has the postal code 94080!
+-- 9. List the 10 most recent shipped orders.
+-- 10. Which customers have ordered a product, that has 'Ford' or 'Honda' in its name?

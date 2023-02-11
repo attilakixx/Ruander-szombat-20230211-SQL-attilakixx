@@ -9,9 +9,15 @@ CREATE TABLE `dog_adoption`.`dog` (
   `birthdate` DATE NULL,
   `color` VARCHAR(45) NOT NULL,
   `size` VARCHAR(45) NOT NULL,
-  `status` TINYINT(3) NULL COMMENT '1:adopted, 2:not adopted,3:reserved',
+  `status` TINYINT(1) NULL COMMENT '1:adopted, 2:not adopted,3:reserved',
   PRIMARY KEY (`id`),
   UNIQUE INDEX `transponder_UNIQUE` (`transponder` ASC) );
+  
+  ALTER TABLE `dog_adoption`.`dog` 
+ADD COLUMN `owner_id` VARCHAR(4) NOT NULL AFTER `id`,
+DROP PRIMARY KEY,
+ADD PRIMARY KEY (`id`, `owner_id`);
+;
   
   
 CREATE TABLE `dog_adoption`.`owner` (
@@ -21,16 +27,21 @@ CREATE TABLE `dog_adoption`.`owner` (
   `address` VARCHAR(200) NULL,
   `email` VARCHAR(100) NULL,
   `phone` VARCHAR(45) NULL,
-  `status` TINYINT(2) NULL COMMENT '1: adopted, 3:reserved',
+  `status` TINYINT(1) NULL COMMENT '1: adopted, 3:reserved',
   PRIMARY KEY (`id`));
-
+  
+  ALTER TABLE `dog_adoption`.`owner` 
+ADD COLUMN `owner_id` VARCHAR(4) NOT NULL AFTER `id`,
+DROP PRIMARY KEY,
+ADD PRIMARY KEY (`id`, `owner_id`);
+;
 
 CREATE TABLE `dog_adoption`.`basic_vaccination` (
   `transponder` INT NOT NULL,
-  `distemper` TINYINT(2) NOT NULL COMMENT '1:yes, 2:no',
-  `hepatitis(CVH)` TINYINT(2) NOT NULL COMMENT '1:yes, 2:no',
-  `leptospirosis` TINYINT(2) NOT NULL COMMENT '1:yes, 2:no',
-  `parvovirosis` TINYINT(2) NOT NULL COMMENT '1:yes, 2:no',
-  `rabies` TINYINT(2) NOT NULL COMMENT '1:yes, 2:no',
+  `distemper` TINYINT(1) NOT NULL COMMENT '1:yes, 2:no',
+  `hepatitis(CVH)` TINYINT(1) NOT NULL COMMENT '1:yes, 2:no',
+  `leptospirosis` TINYINT(1) NOT NULL COMMENT '1:yes, 2:no',
+  `parvovirosis` TINYINT(1) NOT NULL COMMENT '1:yes, 2:no',
+  `rabies` TINYINT(1) NOT NULL COMMENT '1:yes, 2:no',
   PRIMARY KEY (`transponder`));
   

@@ -109,6 +109,53 @@ UPDATE `dog_adoption`.`dog` SET `birthdate` = '2018-06-01' WHERE (`id` = '50');
 UPDATE `dog_adoption`.`dog` SET `birthdate` = '2017-05-01' WHERE (`id` = '51');
 UPDATE `dog_adoption`.`dog` SET `birthdate` = '2017-09-01' WHERE (`id` = '52');
 
+-- update dog owner_id
+
+UPDATE `dog_adoption`.`dog` SET `owner_id` = 'do45' WHERE (`id` = '1') and (`owner_id` = '');
+UPDATE `dog_adoption`.`dog` SET `owner_id` = 'do34' WHERE (`id` = '2') and (`owner_id` = '');
+UPDATE `dog_adoption`.`dog` SET `owner_id` = 'do76' WHERE (`id` = '3') and (`owner_id` = '');
+UPDATE `dog_adoption`.`dog` SET `owner_id` = 'do12' WHERE (`id` = '4') and (`owner_id` = '');
+UPDATE `dog_adoption`.`dog` SET `owner_id` = 'do01' WHERE (`id` = '5') and (`owner_id` = '');
+UPDATE `dog_adoption`.`dog` SET `owner_id` = 'do98' WHERE (`id` = '6') and (`owner_id` = '');
+UPDATE `dog_adoption`.`dog` SET `owner_id` = 'do24' WHERE (`id` = '7') and (`owner_id` = '');
+UPDATE `dog_adoption`.`dog` SET `owner_id` = 'do65' WHERE (`id` = '8') and (`owner_id` = '');
+UPDATE `dog_adoption`.`dog` SET `owner_id` = 'do33' WHERE (`id` = '9') and (`owner_id` = '');
+UPDATE `dog_adoption`.`dog` SET `owner_id` = 'do78' WHERE (`id` = '10') and (`owner_id` = '');
+UPDATE `dog_adoption`.`dog` SET `owner_id` = 'do54' WHERE (`id` = '11') and (`owner_id` = '');
+UPDATE `dog_adoption`.`dog` SET `owner_id` = 'do43' WHERE (`id` = '12') and (`owner_id` = '');
+UPDATE `dog_adoption`.`dog` SET `owner_id` = 'do67' WHERE (`id` = '13') and (`owner_id` = '');
+UPDATE `dog_adoption`.`dog` SET `owner_id` = 'do21' WHERE (`id` = '14') and (`owner_id` = '');
+UPDATE `dog_adoption`.`dog` SET `owner_id` = 'do10' WHERE (`id` = '15') and (`owner_id` = '');
+UPDATE `dog_adoption`.`dog` SET `owner_id` = 'do89' WHERE (`id` = '16') and (`owner_id` = '');
+UPDATE `dog_adoption`.`dog` SET `owner_id` = 'do42' WHERE (`id` = '17') and (`owner_id` = '');
+UPDATE `dog_adoption`.`dog` SET `owner_id` = 'do56' WHERE (`id` = '18') and (`owner_id` = '');
+UPDATE `dog_adoption`.`dog` SET `owner_id` = 'do32' WHERE (`id` = '19') and (`owner_id` = '');
+UPDATE `dog_adoption`.`dog` SET `owner_id` = 'do87' WHERE (`id` = '20') and (`owner_id` = '');
+UPDATE `dog_adoption`.`dog` SET `owner_id` = 'do13' WHERE (`id` = '21') and (`owner_id` = '');
+UPDATE `dog_adoption`.`dog` SET `owner_id` = 'do23' WHERE (`id` = '22') and (`owner_id` = '');
+UPDATE `dog_adoption`.`dog` SET `owner_id` = 'do09' WHERE (`id` = '23') and (`owner_id` = '');
+UPDATE `dog_adoption`.`dog` SET `owner_id` = 'do97' WHERE (`id` = '24') and (`owner_id` = '');
+UPDATE `dog_adoption`.`dog` SET `owner_id` = 'do15' WHERE (`id` = '25') and (`owner_id` = '');
+UPDATE `dog_adoption`.`dog` SET `owner_id` = 'do37' WHERE (`id` = '26') and (`owner_id` = '');
+UPDATE `dog_adoption`.`dog` SET `owner_id` = 'do41' WHERE (`id` = '27') and (`owner_id` = '');
+UPDATE `dog_adoption`.`dog` SET `owner_id` = 'do53' WHERE (`id` = '28') and (`owner_id` = '');
+UPDATE `dog_adoption`.`dog` SET `owner_id` = 'do14' WHERE (`id` = '29') and (`owner_id` = '');
+UPDATE `dog_adoption`.`dog` SET `owner_id` = 'do73' WHERE (`id` = '30') and (`owner_id` = '');
+UPDATE `dog_adoption`.`dog` SET `owner_id` = '' WHERE (`id` = '31') and (`owner_id` = '');
+UPDATE `dog_adoption`.`dog` SET `owner_id` = '' WHERE (`id` = '32') and (`owner_id` = '');
+UPDATE `dog_adoption`.`dog` SET `owner_id` = '' WHERE (`id` = '33') and (`owner_id` = '');
+UPDATE `dog_adoption`.`dog` SET `owner_id` = '' WHERE (`id` = '34') and (`owner_id` = '');
+UPDATE `dog_adoption`.`dog` SET `owner_id` = '' WHERE (`id` = '35') and (`owner_id` = '');
+UPDATE `dog_adoption`.`dog` SET `owner_id` = '' WHERE (`id` = '36') and (`owner_id` = '');
+UPDATE `dog_adoption`.`dog` SET `owner_id` = '' WHERE (`id` = '37') and (`owner_id` = '');
+UPDATE `dog_adoption`.`dog` SET `owner_id` = '' WHERE (`id` = '38') and (`owner_id` = '');
+UPDATE `dog_adoption`.`dog` SET `owner_id` = '' WHERE (`id` = '39') and (`owner_id` = '');
+UPDATE `dog_adoption`.`dog` SET `owner_id` = '' WHERE (`id` = '40') and (`owner_id` = '');
+UPDATE `dog_adoption`.`dog` SET `owner_id` = '' WHERE (`id` = '41') and (`owner_id` = '');
+UPDATE `dog_adoption`.`dog` SET `owner_id` = '' WHERE (`id` = '42') and (`owner_id` = '');
+UPDATE `dog_adoption`.`dog` SET `owner_id` = '' WHERE (`id` = '43') and (`owner_id` = '');
+
+
 
 -- insert owner 
 insert into `dog_adoption`.`owner` (id, first_name, last_name, address, email, phone, status) values (1, 'Malinde', 'Extill', '16 Farwell Plaza', 'mextill0@jalbum.net', '+7 (573) 505-2009', 1);
@@ -163,6 +210,40 @@ insert into `dog_adoption`.`owner` (id, first_name, last_name, address, email, p
 insert into `dog_adoption`.`owner` (id, first_name, last_name, address, email, phone, status) values (50, ' ', ' ', ' ', ' ', ' ', ' ');
 insert into `dog_adoption`.`owner` (id, first_name, last_name, address, email, phone, status) values (51, ' ', ' ', ' ', ' ', ' ', ' ');
 insert into `dog_adoption`.`owner` (id, first_name, last_name, address, email, phone, status) values (52, ' ', ' ', ' ', ' ', ' ', ' ');
+
+
+-- Update owner owner_id
+
+UPDATE `dog_adoption`.`owner` SET `owner_id` = 'do65' WHERE (`id` = '1') and (`owner_id` = '');
+UPDATE `dog_adoption`.`owner` SET `owner_id` = 'do76' WHERE (`id` = '2') and (`owner_id` = '');
+UPDATE `dog_adoption`.`owner` SET `owner_id` = 'do98' WHERE (`id` = '3') and (`owner_id` = '');
+UPDATE `dog_adoption`.`owner` SET `owner_id` = 'do10' WHERE (`id` = '4') and (`owner_id` = '');
+UPDATE `dog_adoption`.`owner` SET `owner_id` = 'do01' WHERE (`id` = '5') and (`owner_id` = '');
+UPDATE `dog_adoption`.`owner` SET `owner_id` = 'do24' WHERE (`id` = '6') and (`owner_id` = '');
+UPDATE `dog_adoption`.`owner` SET `owner_id` = 'do67' WHERE (`id` = '7') and (`owner_id` = '');
+UPDATE `dog_adoption`.`owner` SET `owner_id` = 'do43' WHERE (`id` = '8') and (`owner_id` = '');
+UPDATE `dog_adoption`.`owner` SET `owner_id` = 'do34' WHERE (`id` = '9') and (`owner_id` = '');
+UPDATE `dog_adoption`.`owner` SET `owner_id` = 'do78' WHERE (`id` = '10') and (`owner_id` = '');
+UPDATE `dog_adoption`.`owner` SET `owner_id` = 'do45' WHERE (`id` = '11') and (`owner_id` = '');
+UPDATE `dog_adoption`.`owner` SET `owner_id` = 'do54' WHERE (`id` = '12') and (`owner_id` = '');
+UPDATE `dog_adoption`.`owner` SET `owner_id` = 'do89' WHERE (`id` = '13') and (`owner_id` = '');
+UPDATE `dog_adoption`.`owner` SET `owner_id` = 'do21' WHERE (`id` = '14') and (`owner_id` = '');
+UPDATE `dog_adoption`.`owner` SET `owner_id` = 'do56' WHERE (`id` = '15') and (`owner_id` = '');
+UPDATE `dog_adoption`.`owner` SET `owner_id` = 'do87' WHERE (`id` = '16') and (`owner_id` = '');
+UPDATE `dog_adoption`.`owner` SET `owner_id` = 'do42' WHERE (`id` = '17') and (`owner_id` = '');
+UPDATE `dog_adoption`.`owner` SET `owner_id` = 'do23' WHERE (`id` = '18') and (`owner_id` = '');
+UPDATE `dog_adoption`.`owner` SET `owner_id` = 'do32' WHERE (`id` = '19') and (`owner_id` = '');
+UPDATE `dog_adoption`.`owner` SET `owner_id` = 'do97' WHERE (`id` = '20') and (`owner_id` = '');
+UPDATE `dog_adoption`.`owner` SET `owner_id` = 'do37' WHERE (`id` = '21') and (`owner_id` = '');
+UPDATE `dog_adoption`.`owner` SET `owner_id` = 'do41' WHERE (`id` = '22') and (`owner_id` = '');
+UPDATE `dog_adoption`.`owner` SET `owner_id` = 'do14' WHERE (`id` = '23') and (`owner_id` = '');
+UPDATE `dog_adoption`.`owner` SET `owner_id` = 'do73' WHERE (`id` = '24') and (`owner_id` = '');
+UPDATE `dog_adoption`.`owner` SET `owner_id` = 'do33' WHERE (`id` = '25') and (`owner_id` = '');
+UPDATE `dog_adoption`.`owner` SET `owner_id` = 'do12' WHERE (`id` = '26') and (`owner_id` = '');
+UPDATE `dog_adoption`.`owner` SET `owner_id` = 'do09' WHERE (`id` = '27') and (`owner_id` = '');
+UPDATE `dog_adoption`.`owner` SET `owner_id` = 'do53' WHERE (`id` = '28') and (`owner_id` = '');
+UPDATE `dog_adoption`.`owner` SET `owner_id` = 'do13' WHERE (`id` = '29') and (`owner_id` = '');
+UPDATE `dog_adoption`.`owner` SET `owner_id` = 'do15' WHERE (`id` = '30') and (`owner_id` = '');
 
 
 --  insert basic_vaccination

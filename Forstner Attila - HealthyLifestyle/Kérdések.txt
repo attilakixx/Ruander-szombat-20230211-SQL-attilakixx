@@ -1,0 +1,55 @@
+0. Hozz létre egy adatbázist "healthylifestyle" néven és importáld be a users_data, diet_types, users_diet csv fileokat.
+
+users_data:						diet_types:						users_diet:
+	id - INT						id - INT						user_id - INT
+	first_name - TEXT					name - TEXT						diet_id - INT
+	last_name - TEXT
+	email - TEXT
+	gender - TEXT
+	height_cm - INT
+	weight_kg - INT
+    
+
+1. Állítsd be a Primary Key-t a users_data és diet_types táblák "id" oszlopára úgy, hogy automatikusan növekedjen egy új rekord hozzáadásával.
+
+
+2. Hány olyan ember szerepel az adatbázisban, akiknek nem tudjuk a nemét?
+
+
+3. Kik azok az emberek, akiknek nem tudjuk kiszámolni a BMI (Body Mass Index) értékét? (BMI = [kg] / [m]2)
+
+
+4. Az adatbázisban szereplő "Marietta Elverstone" neme rosszul van beállítva. Állítsd át "Female"-re.
+
+
+5. Az adatbázisban szereplő emberek hány százaléka nő?
+
+
+6. Hány férfi és hány nő szerepel az adatbázisban? A két oszlop egymás mellett jelenjen meg "nők száma" és "férfiak száma" néven.
+
+    
+7. Hány ember követ "Normál" étrendet? Az oszlop neve "normál étrendet követő emberek száma" legyen.
+
+
+8. Kik azok a férfiak, akik "Normál" étrendet követnek és a súlyuk legalább 95 kg? Csak a teljes nevük, magasságuk és súlyuk jelenjen meg, rendezd őket magasságuk szerint csökkenő sorrendbe.
+
+
+9. Hányan követnek tejmentes vagy cukormentes étrendet? Az oszlop neve "tej vagy cukormentes étrendet követő emberek száma" legyen.
+
+
+10. Az adatbázisban szereplő emberek hány százaléka vegán vagy vegetáriánus?
+
+
+11. Melyik 3 embernek a legmagasabb a BMI értéke? A lekérdezésben az id-juk, nevük, nemük, magasságuk, súlyuk és BMI indexük jelenjen meg. (BMI = [kg] / [m]2)
+
+
+12. Hány ember követ egy-egy étrendet? (Normal - X, Vegetarian - Y, Vegan - Z...stb) Majd rendezd őket étrend id szerint növekvő sorrendbe. A lekérdezésben az étrend id-ja és neve mellett szerepeljen, hogy hányan követik az adott étrendet.
+
+
+13. Melyik étrendet követik a legtöbben? A lekérdezésben csak az étrend neve és a követői száma szerepeljen.
+
+
+14. Kik azok az emberek, akik nem követnek semmilyen étrendet, de szerepelnek az adatbázisban?
+
+
+15. Melyik az az étrend, amelyet egy ember sem követ? A lekérdezésben az étrend id-ja és neve jelenjen meg.
